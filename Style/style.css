@@ -1,0 +1,384 @@
+/*Desktop*/
+
+body {
+    font-family: Garamond, 'Times New Roman', Georgia;
+    min-width: 300px;
+}
+
+.background
+{
+    background-image: url("../images/carp2.jpg");
+    background-size: 100%;
+	background-repeat: no-repeat;
+    height: 40em;
+    margin-bottom: 1em;
+}
+
+.background2
+{
+    background-image: url("../images/Kyiv/7.jpg");
+    background-size: 100%;
+	background-repeat: no-repeat;
+    height: 40em;
+    margin-bottom: 1em;
+}
+
+.background3
+{
+    background-image: url("../images/carp1.jpg");
+    background-size: 100%;
+	background-repeat: no-repeat;
+    height: 40em;
+    margin-bottom: 1em;
+}
+
+.cont-kyiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+
+ .kyiv-card
+{
+    width: 30% !important;
+} 
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.cont2 {
+    text-align: center;
+}
+
+.card2 {
+    text-align: center;
+    border: 0;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.flex-features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gal {
+    text-align: center;
+}
+
+
+
+.gallery {
+    text-align: center;
+    min-width: 400px;
+    background-color: black;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 0.3em;
+}
+
+.flex-1,
+.flex-2,
+.flex-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+img {
+    width: 98%;
+    margin-bottom: 1em;
+}
+
+.kyivtours
+{
+    display: flex ;
+    justify-content: space-evenly;
+    column-gap: 2em; 
+    row-gap: 2em;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+}
+
+
+.radio {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 0.5em;
+}
+
+.contact {
+    position: relative;
+    left: -0.5em;
+}
+
+select {
+    width: 100%;
+    padding: 0.3em;
+}
+
+
+.textarea {
+    width: 100%;
+    height: 10em;
+}
+
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 0.6em;
+}
+
+.footer-icons>div {
+    border: 2px solid gray;
+    border-radius: 50%;
+    padding: 0.8em;
+}
+
+.footer-icons>div:hover {
+
+    background-color: gray;
+    filter: opacity(0.9);
+    transition-duration: 0.3s;
+}
+
+.flex-big-features {
+    text-align: center;
+
+}
+
+.flex-features>div {
+    padding: 3em 2em;
+}
+
+
+.flex-big {
+    text-align: center;
+}
+
+form {
+    text-align: left;
+}
+
+.footer1 {
+    text-align: center;
+}
+
+.menu {
+    position: relative;
+}
+
+.nav-link {
+    padding: 0 !important;
+    padding-right: 2.5em !important;
+    padding-left: 1.5em !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.nav-link:hover {
+    background-color: lightgray;
+    filter: opacity(0.6);
+    transition-duration: 0.3s;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 1em;
+}
+
+
+image {
+    height: 100%;
+}
+
+.button2 {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0.2em 1em;
+}
+
+
+
+
+.card-image1 {
+    max-width: 700px;
+}
+
+.card-image {
+    max-width: 100%;
+}
+
+
+.picture {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: inline-block;
+
+}
+
+.photo1 {
+    background-image: url("../images/photo1.jpg");
+
+}
+
+
+.photo2 {
+    background-image: url("../images/photo2.jpg");
+
+}
+
+.photo3 {
+    background-image: url("../images/image3.jpg");
+
+}
+
+.flex-features>div {
+    border: none;
+    border-bottom: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+
+}
+
+.flex-features div:nth-child(3),
+.flex-features div:last-child {
+    border-right: none;
+}
+
+.flex-features div:nth-child(4),
+.flex-features div:nth-child(5),
+.flex-features div:last-child {
+    border-bottom: none;
+}
+
+.flex-submit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    position: absolute;
+    top: 5em;
+    background-color: white;
+    color: black;
+    opacity: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@keyframes hidden-block {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0.6
+    }
+}
+
+.hidden:hover {
+    animation-name: hidden-block;
+    animation-duration: 10s;
+}
+
+
+@keyframes carousel {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0.5
+    }
+}
+
+
+
+.gallery>img:hover {
+    animation-name: carousel;
+    animation-duration: 5s;
+}
+
+
+.carousel-inner:hover .carousel-control-prev {
+    opacity: 1 !important;
+}
+
+.carousel-inner:hover .carousel-control-next {
+    opacity: 1 !important;
+}
+
+
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .flex-features>div {
+        border: none;
+        border-bottom: 2px solid lightgray;
+    }
+
+    .flex-features div:first-child,
+    .flex-features div:nth-child(3),
+    .flex-features div:nth-child(5) {
+        border-right: 2px solid lightgray;
+
+    }
+
+    .flex-features div:nth-child(4) {
+        border-bottom: 2px solid lightgray;
+
+    }
+
+    .kyiv-card
+{
+    width: 45% !important;
+} 
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+    .chosen {
+        width: 100vw;
+    }
+
+    .not-chosen {
+        display: none;
+    }
+
+    .flex-features>div {
+        border: none;
+        border-bottom: 2px solid lightgray;
+    }
+
+    .flex-features div:nth-child(4),
+    .flex-features div:nth-child(5),
+    .flex-features div:last-child {
+        border-bottom: 2px solid lightgray;
+    }
+
+    .kyiv-card
+    {
+        width: 95% !important;
+    } 
+
+
+}
